@@ -1,4 +1,4 @@
-Thu Mar 20 11:28:14 2014
+Thu Mar 20 11:49:49 2014
 Windows-post2008Server-6.2.9200
 Ren'Py 6.17.3.327
 Dating-Sim-test 0.0
@@ -272,7 +272,7 @@ Performance test:
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.015000 seconds.
 - Frame drawn at 0.030000 seconds.
-- Frame drawn at 0.047000 seconds.
+- Frame drawn at 0.046000 seconds.
 - Frame drawn at 0.063000 seconds.
 - 0.063000 seconds to render 5 frames.
 Deallocating textures.

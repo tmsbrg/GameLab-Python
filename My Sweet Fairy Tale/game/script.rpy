@@ -15,6 +15,26 @@ define princeCharming = Character('Prince Charming', color="#FFFFFF")
 label start:
     player "Ohh hai good looking guy!"
     shrek "GRAAAAAAAAAAAAWRRRRRRR Get out my Swamp!"
-    player "... Why are you so mean"
+    player "... Why are you so mean?"
+    menu:
 
+        "Get the fuck out of here":
+
+            jump goAwayFromShrek
+
+        "Look into his eyes":
+
+            jump lookingInShrekEyes
+    return
+
+label goAwayFromShrek:
+    player "Screw you I'm out of here!"
+    shrek "BYE!"
+    return
+    
+    label lookingInShrekEyes:
+    "You started to look deeply into Shrek his eyes"
+    shrek "I WILL EAT YOU! RAAAAAAAAAAAAAAAAAAAAARRRRRRRRRRRRRRRRRRRRWWW"
+    player "NOOOOOOOOOOOOOOO!!!!!!!......."
+    "You got eaten by Shrek"
     return

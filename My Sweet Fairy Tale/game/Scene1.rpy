@@ -1,8 +1,8 @@
 #Shrek scene!
 
 label scene_1_shrek:
-    shrek "Hey %(player_name)s. Wanna see what's under all my layers?"
     menu:
+        shrek "Hey %(player_name)s. Wanna see what's under all my layers?"
         "Yes":
             jump scene_1_Yes_Layers
         "No":

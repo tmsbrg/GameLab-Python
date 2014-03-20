@@ -12,8 +12,8 @@ label start:
         
     player "My name is %(player_name)s!"
     
-    "Which character do you like"
     menu:
+        player "Which character do I like?"
         "Snow White":
             jump scene_snow
         "Shrek":
@@ -25,12 +25,12 @@ label start:
 label scene_snow:
     cinderella "Be gentle... %(player_name)s..."
     snowWhite ";_;"
-    jump scene_end
+    jump end
     
 label scene_red:
     redRidingHood "Hey hottie ;)"
     femaleWolf "You look... tasty"
-    jump scene_end
+    jump end
     
 label end:
     "Game over, you died."

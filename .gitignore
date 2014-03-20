@@ -35,5 +35,6 @@ nosetests.xml
 .project
 .pydevproject
 
-"My Sweet Fairy Tale/game/saves/*"
-"My Sweet Fairy Tale/log.txt"
+My Sweet Fairy Tale/game/saves/*
+My Sweet Fairy Tale/log.txt
+*.swp

@@ -275,3 +275,7 @@ Performance test:
 - Frame drawn at 0.047000 seconds.
 - Frame drawn at 0.063000 seconds.
 - 0.063000 seconds to render 5 frames.
+Deallocating textures.
+Done deallocating textures.
+About to quit GL.
+Finished quit GL.

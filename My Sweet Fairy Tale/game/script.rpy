@@ -4,16 +4,17 @@
 # eg. image eileen happy = "eileen_happy.png"
 
 # Declare characters used by this game.
-define e = Character('Snow White', color="#FFFFFF")
-
-
+define player = Character('F-Player', color="#FFFFFF")
+define snowWhite = Character('Snow White', color="#FFFFFF")
+define femalewolf = Character('Female Wolf', color="#FFFFFF")
+define redRidingHood = Character('Red Riding hood', color="#FFFFFF")
+define cyndarella = Character('Cyndarella', color="#FFFFFF")
+define shrek = Character('Shrek', color="#FFFFFF")
+define princeCharming = Character('Prince Charming', color="#FFFFFF")
 # The game starts here.
 label start:
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-    
-    e"Fuck you"
+    player "Ohh hai good looking guy!"
+    shrek "GRAAAAAAAAAAAAWRRRRRRR Get out my Swamp!"
+    player "... Why are you so mean"
 
     return

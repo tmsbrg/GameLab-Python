@@ -34,3 +34,6 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+"My Sweet Fairy Tale/game/saves/*"
+"My Sweet Fairy Tale/log.txt"

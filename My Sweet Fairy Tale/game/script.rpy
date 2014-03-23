@@ -6,20 +6,21 @@
 # The game starts here.
 label start:
     
-    $ player_name = renpy.input("What is your name?").strip()
+    $ player_name = renpy.input("My lady, what is your name?").strip()
     if player_name == "":
         $ player_name = "Default"
         
-    player "My name is %(player_name)s!"
-    
-    menu:
-        player "Which character do I like?"
-        "Snow White":
-            jump scene_snow
-        "Shrek":
-            jump scene_1_shrek
-        "Red Riding Hood":
-            jump scene_red
+    player "My name is %(player_name)s! Who are you?"
+    "Don't mind who I'm please enjoy your stay here."
+    jump scene1
+#    menu:
+#        player "Which character do I like?"
+#        "Snow White":
+#            jump scene_snow
+#        "Shrek":
+#            jump scene_1_shrek
+#        "Red Riding Hood":
+#            jump scene_red
 
 
 label scene_snow:

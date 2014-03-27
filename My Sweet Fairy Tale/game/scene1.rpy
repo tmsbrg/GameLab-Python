@@ -48,6 +48,11 @@ label scene1_good:
     player "Well then you are too nice for being what you said you are"
     show shrek smile
     shrek "Thanks, well shouldn't you head out to town? I will give you some money"
+    
+    play sound "snd/plus.mp3"
+    "romance +10"
+    $ romance_shrek += 10
+    
     "Shreks gives %(player_name)s a bag of money"
     player "Thank you Shrek :) I will go now bye bye I will cya around!"
     shrek "Goodbye %(player_name)s have a nice journey!"
@@ -56,10 +61,19 @@ label scene1_good:
     
 label scene1_bad:
     shrek "Fine!, ROARRRRR! GET OUT MY SWAMP NOW BEFORE I EAT YOU!"
+    play sound "snd/minus.mp3"
+    "romance -5"
+    $ romance_shrek -= 5
     player "You won't eat me you are fat and will never able to get me!"
     shrek "ROARRRRRRRR! GET OUT!"
+    play sound "snd/minus.mp3"
+    "romance -5"
+    $ romance_shrek -= 5
     "Shrek throws a bag of money to %(player_name)s"
     player "Thanks sucker!"
+    play sound "snd/minus.mp3"
+    "romance -5"
+    $ romance_shrek -= 5
     "The player runs into the forest and there....."
     jump scene2
 

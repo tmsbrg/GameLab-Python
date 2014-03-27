@@ -25,21 +25,21 @@ image snowWhite sad = "img/snowwhite_sad.jpg"
 label scene3:
     show city_background
     show snowWhite sad
-        menu: 
-            unknown "*sniff* *sniff* How could he :'( *sniff* *sniff*"
-            "???? is crying what will you do?"
-            "Try to comfort her":
-                jump scene3_comfort
-            "Ignore her":
-                jump scene3_ignore
-            "Try to adorn her":
-                jump scene3_adorn
-        
+    unknown "*sniff* *sniff* How could he :'( *sniff* *sniff*"
+    menu: 
+        "???? is crying what will you do?"
+        "Try to comfort her":
+            jump scene3_comfort
+        "Ignore her":
+            jump scene3_ignore
+        "Try to adorn her":
+            jump scene3_adorn
+
 label scene3_comfort:
     player "Hi, I'm %(player_name)s what is wrong? Why are you so upsad?"
     menu: 
         unknown "Prince Charming he... he... broke up with me :'("
-        "Hug ????"
+        "Hug ????":
             "You hugged ????"
             player "It will be alright, don't be sad"
             snowWhite "Thank you *sniff* I'm Snow White"
@@ -48,36 +48,36 @@ label scene3_comfort:
             show snowWhite sad
             menu:
                 snowWhite "He wanted a real princess and choosed a filthy female Ogre above me :'("
-                "Ohh please grow up how old are you?! 5 ?"
+                "Ohh please grow up how old are you?! 5 ?":
                     show snowWhite angry
                     snowWhite "How dare you to speak to me like that! If you are here to bully someone then you picked the wrong woman!"
                     player "Ohh you want to fight me?!"
                     snowWhite "Leave me alone NOW!!"
                     player "Fine go die in your corner!"
                     jump scene3_ignore
-                "What a asshole! How can he choose a Ogre above you? You look pretty :)"
+                "What a asshole! How can he choose a Ogre above you? You look pretty :)":
                     show snowWhite smile
                     menu:
                         snowWhite "Really? Do you really think I'm pretty ? :$"
-                        "Yea I-I do ;)"
+                        "Yea I-I do ;)":
                             snowWhite "Thank you :) You look pretty too :$"
                             player "Thanks!"
                             menu:
                                 snowWhite "Do you want to perhaps have a lunch thogeter ?"
-                                "Sure that sounds good! :)"
+                                "Sure that sounds good! :)":
                                     jump scene3_restaurant
-                                "Sorry I can't I got to do something else"
+                                "Sorry I can't I got to do something else":
                                     snowWhite "Aww okay :) Well thank you for making me feel good and making me smile. Bye bye!"
                                     plater "Bye bye!"
                                     jump scene4
                                     
-                        "No, you are ugly!"
+                        "No, you are ugly!":
                             show snowWhite sad
                             snowWhite "You are mean :'( Go away! Leave me alone!"
                             "The player left Snow White alone"
                             jump scene4
                             
-        "Leave her alone and get flowers"
+        "Leave her alone and get flowers":
             jump scene3_ignore
     
     

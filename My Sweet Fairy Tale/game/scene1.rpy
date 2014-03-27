@@ -15,17 +15,22 @@
 #	Je motivatie is eerst om terug te komen naar de gewone wereld,
 #	maar nadat je de hete chicks van de fairy tale wereld vind, verandert je
 #	motivatie
+image swamp_background = "img/swampbackground.jpg"
+image shrek smile = "img/shrek_smile.jpg"
+image shrek mad = "img/shrek_mad.jpg"
 
 label scene1:
-    shrek "Hey YOU! What are you doing in my swamp? And who are you?"
-    player " I'm %(player_name)s and I don't know, last thing I remember is that I was in my bed sleeping and now I'm here. Where am I?"
+    show swamp_background
+    show shrek mad
+    unknown "Hey YOU! What are you doing in my swamp? And who are you?"
+    player " I'm %(player_name)s and I don't know, last thing I remember is that I was in my bed sleeping and now I'm here. Where am I and who are you?"
     jump scene1_choose
 
         
 label scene1_choose:
 
     menu: 
-        shrek "Like I said before you are in MY swamp. Is there anything I can help you with? Else get out my SWAMP!"
+        shrek "I'm Shrek and like I said before you are in MY swamp. Is there anything I can help you with? Else get out my SWAMP!"
         "Yes, how can I go back home? And why does it look weird around here? Am I in a Fairy Tale?":
             jump scene1_good
         "No, you look ugly, disquisting and you are mean. I will go find someone else.":
@@ -33,22 +38,26 @@ label scene1_choose:
 
     
 label scene1_good:
+    show shrek smile
     shrek "A Fairy tale? This is Fairy world, so where are you from?"
     player "I'm from Earth, how do I go back to earth?"
     shrek "I don't know, I didn't even know it was possible to come here from another world, maybe someone in the city north of here can help you?"
-    player "Thanks!, so what is your name ?"
-    shrek "I'm Shrek I eat people and live in the swamp."
+    player "Thanks!, so what are you doing here?"
+    show shrek mad
+    shrek "I live here because I eat people!"
     player "Well then you are too nice for being what you said you are"
+    show shrek smile
     shrek "Thanks, well shouldn't you head out to town? I will give you some money"
     "Shreks gives %(player_name)s a bag of money"
     player "Thank you Shrek :) I will go now bye bye I will cya around!"
-    shrek "Goodbye %(player_name)s have a nice journy!"
+    shrek "Goodbye %(player_name)s have a nice journey!"
     "You are walking in the forest and there....."
     jump scene2
+    
 label scene1_bad:
     shrek "Fine!, ROARRRRR! GET OUT MY SWAMP NOW BEFORE I EAT YOU!"
     player "You won't eat me you are fat and will never able to get me!"
-    shrek "ROARRRRRRRR! GET OUT! -Throws with a money bag-"
+    shrek "ROARRRRRRRR! GET OUT!"
     "Shrek throws a bag of money to %(player_name)s"
     player "Thanks sucker!"
     "The player runs into the forest and there....."

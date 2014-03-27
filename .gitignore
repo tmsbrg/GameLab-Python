@@ -40,4 +40,5 @@ My Sweet Fairy Tale/game/saves/*
 My Sweet Fairy Tale/log.txt
 My Sweet Fairy Tale/traceback.txt
 My Sweet Fairy Tale/tmp/*
+My Sweet Fairy Tale/game/bytecode.rpyb
 *.swp

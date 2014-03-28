@@ -4,6 +4,7 @@
 # eg. image eileen happy = "eileen_happy.png"
 
 image bg pink = "img/bg_pink.png"
+image bg deepforest = "img/bg_deepforest.png"
 image bg forest = "img/bg_forest.png"
 image bg swamp = "img/bg_swamp.png"
 image bg city = "img/bg_city.png"

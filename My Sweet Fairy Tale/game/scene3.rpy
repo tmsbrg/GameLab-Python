@@ -20,7 +20,7 @@
 label scene3:
     $ bought_flowers = False
     scene bg city
-    show snowWhite angry
+    show snowWhite shy
     with fade
     unknown "*sniff* *sniff* How could he :'( *sniff* *sniff*"
     menu: 
@@ -45,7 +45,7 @@ label scene3_comfort:
             "romance +5"
             $ romance_snowWhite += 5
             player "So what happend? Why did he broke up?"
-            show snowWhite angry
+            show snowWhite shy
             with fade
             menu:
                 snowWhite "He wanted a real princess and choosed a filthy female Ogre above me :'("
@@ -108,7 +108,7 @@ label scene3_restaurant:
             player "We would like to have some medium rare steak with tommato ketchup"
             unknown "Okay 2 medium rare steak with tommato ketchup will be on your way soon"
             "The ober walked away"
-            show snowWhite angry
+            show snowWhite shy
             with fade
             snowWhite "I can order something for myself too you know..."
             play sound "snd/minus.mp3"
@@ -129,7 +129,7 @@ label scene3_restaurant:
                     player "Bye bye"
                     jump scene3_flowers
                 "Ohh well I didn't enjoy it either. It was a waste of time really...":
-                    show snowWhite angry
+                    show snowWhite shy
                     with fade
                     snowWhite "Ohh... I'm sorry to waste you time :'( Well I have to go bye!"
                     play sound "snd/minus.mp3"

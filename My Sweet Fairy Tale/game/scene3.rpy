@@ -21,6 +21,7 @@ label scene3:
     $ bought_flowers = False
     scene bg city
     show snowWhite angry
+    with fade
     unknown "*sniff* *sniff* How could he :'( *sniff* *sniff*"
     menu: 
         "???? is crying what will you do?"
@@ -39,15 +40,22 @@ label scene3_comfort:
             player "It will be alright, don't be sad"
             snowWhite "Thank you *sniff* I'm Snow White"
             show snowWhite smile
+            with fade
             play sound "snd/plus.mp3"
             "romance +5"
             $ romance_snowWhite += 5
             player "So what happend? Why did he broke up?"
+<<<<<<< HEAD
             show snowWhite angry
+=======
+            show snowWhite sad
+            with fade
+>>>>>>> fd0507b01713e97db9cdd91f3e66945f03a6f1d1
             menu:
                 snowWhite "He wanted a real princess and choosed a filthy female Ogre above me :'("
                 "Ohh please grow up how old are you?! 5 ?":
                     show snowWhite angry
+                    with fade
                     snowWhite "How dare you to speak to me like that! If you are here to bully someone then you picked the wrong woman!"
                     play sound "snd/minus.mp3"
                     "romance -5"
@@ -61,6 +69,7 @@ label scene3_comfort:
                     jump scene3_ignore
                 "What a asshole! How can he choose a Ogre above you? You look pretty :)":
                     show snowWhite smile
+                    with fade
                     menu:
                         snowWhite "Really? Do you really think I'm pretty ? :$"
                         "Yea I-I do ;)":
@@ -79,9 +88,14 @@ label scene3_comfort:
                                     jump scene3_flowers
                                     
                         "No, you are ugly!":
+<<<<<<< HEAD
                             show snowWhite angry
+=======
+                            show snowWhite sad
+                            with fade
+>>>>>>> fd0507b01713e97db9cdd91f3e66945f03a6f1d1
                             snowWhite "You are mean :'( Go away! Leave me alone!"
-                            play sound "snd/minus.mp3"
+                            play sound "snd/plus.mp3"
                             "romance -10"
                             $ romance_snowWhite -= 10
                             "The player left Snow White alone"
@@ -103,6 +117,7 @@ label scene3_restaurant:
             unknown "Okay 2 medium rare steak with tommato ketchup will be on your way soon"
             "The ober walked away"
             show snowWhite angry
+            with fade
             snowWhite "I can order something for myself too you know..."
             play sound "snd/minus.mp3"
             "romance -5"
@@ -112,8 +127,9 @@ label scene3_restaurant:
                 snowWhite "Well this didn't went well... but thank you for the lunch and trying to cheer me up"
                 "No problem, I'm sorry that I ordered for you, I meant it good":
                     show snowWhite smile
+                    with fade
                     snowWhite "It is fine, well I have to go now. I will see you around?"
-                    play sound "snd/minus.mp3"
+                    play sound "snd/plus.mp3"
                     "romance +5"
                     $ romance_snowWhite += 5
                     player "Ofcourse we will :) Next time it will go better!"
@@ -121,7 +137,12 @@ label scene3_restaurant:
                     player "Bye bye"
                     jump scene3_flowers
                 "Ohh well I didn't enjoy it either. It was a waste of time really...":
+<<<<<<< HEAD
                     show snowWhite angry
+=======
+                    show snowWhite sad
+                    with fade
+>>>>>>> fd0507b01713e97db9cdd91f3e66945f03a6f1d1
                     snowWhite "Ohh... I'm sorry to waste you time :'( Well I have to go bye!"
                     play sound "snd/minus.mp3"
                     "romance -5"
@@ -139,7 +160,7 @@ label scene3_restaurant:
             unknown "It will be there soon"
             "The ober walked away"
             snowWhite "Thanks that you made me order, Prince Charming normaly orders for me"
-            play sound "snd/minus.mp3"
+            play sound "snd/plus.mp3"
             "romance +5"
             $ romance_snowWhite += 5
             "After a nice lunch with Snow White"
@@ -148,7 +169,7 @@ label scene3_restaurant:
             menu:
                 snowWhite "I have to go now will I see you again?"
                 "Ofcourse you will!":
-                    play sound "snd/minus.mp3"
+                    play sound "snd/plus.mp3"
                     "romance +5"
                     $ romance_snowWhite += 5
                     player "I have no reason not to see you again"
@@ -166,7 +187,23 @@ label scene3_restaurant:
 
 label scene3_flowers:
     hide snowWhite
-    "You walked around town to find a place to buy flowers."
+    with fade
+    if redRidingHoodIsExpectingFlowers == True:
+        menu:
+            "Red Riding Hood asked you to buy some flowers, will you buy some Flowers for her?"
+            "Yes":
+                "You walked around town to find a place to buy flowers for Red Riding Hood"
+            "No":
+                "You didn't want to buy flowers and headed back torwards the forest"
+                jump scene4
+    else:
+        menu:
+            "You are walking around the city and see a flower shop. What will you do?"
+            "Go and head to the flower shop":
+                "You walked torwards the flower shop"
+            "Just head to the forest to see Shrek or Red Riding hood":
+                jump scene4
+            
     unknown "Flowers Flowers! Get here your flowers!"
     player  "I do want some flowers, can I have a bouquet with many roses"
     unknown  "That will be 50 gold pieces!"
@@ -197,7 +234,7 @@ label scene3_adorn:
             player "I'm sorry I thought that you looked pretty. A pretty girl shouldn't cry"
             show snowWhite smile
             unknown "That is nice of you, you don't look bad either"
-            play sound "snd/minus.mp3"
+            play sound "snd/plus.mp3"
             "romance +5"
             $ romance_snowWhite += 5
             player "Thank you :) we should have lunch thogeter"

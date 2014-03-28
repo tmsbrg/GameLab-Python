@@ -15,12 +15,12 @@
 #	Je motivatie is eerst om terug te komen naar de gewone wereld,
 #	maar nadat je de hete chicks van de fairy tale wereld vind, verandert je
 #	motivatie
-
 label scene1:
     scene bg swamp
     show shrek confused
+    with fade
     unknown "Hey YOU! What are you doing in my swamp? And who are you?"
-    player " I'm %(player_name)s and I don't know, last thing I remember is that I was in my bed sleeping and now I'm here. Where am I and who are you?"
+    player "I'm %(player_name)s and I don't know, last thing I remember is that I was in my bed sleeping and now I'm here. Where am I and who are you?"
     jump scene1_choose
 
         
@@ -36,14 +36,17 @@ label scene1_choose:
     
 label scene1_good:
     show shrek smile
+    with fade
     shrek "A Fairy tale? This is Fairy world, so where are you from?"
     player "I'm from Earth, how do I go back to earth?"
     shrek "I don't know, I didn't even know it was possible to come here from another world, maybe someone in the city north of here can help you?"
     player "Thanks!, so what are you doing here?"
     show shrek mad
+    with fade
     shrek "I live here because I eat people!"
     player "Well then you are too nice for being what you said you are"
     show shrek smile
+    with fade
     shrek "Thanks, well shouldn't you head out to town? I will give you some money"
     
     play sound "snd/plus.mp3"

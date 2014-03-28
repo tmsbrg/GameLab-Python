@@ -7,7 +7,6 @@ image snowWhite neutral = "img/snowwhite_neutral.png"
 image snowWhite angry = "img/snowwhite_angry.png"
 image snowWhite shy = "img/snowwhite_shy.png"
 
-
 define femaleWolf = Character('Female Wolf', color="#B38946")
 
 define redRidingHood = Character('Red Riding Hood', color="#F5451D")

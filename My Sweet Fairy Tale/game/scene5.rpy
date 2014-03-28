@@ -173,7 +173,7 @@ label scene5_dinner:
 label scene5_havingdinner:
     "The player started eating cooked snail with extra pepper."
     menu: 
-        shrek "Do you like it?":
+        shrek "Do you like it?"
         "Yes":
             player "Yea it is quite good I never expected that it will taste this great."
             shrek "That is great I did my best to make it :)"

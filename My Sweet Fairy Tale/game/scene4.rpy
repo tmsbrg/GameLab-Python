@@ -31,6 +31,7 @@ label scene4_contemplate_flowers:
             jump scene4_show_romance
 
 label scene4_give_flowers:
+    show redRidingHood happy
     player "Here, I bought you flowers."
     $ bought_flowers = False
     play sound "snd/plus.mp3"
@@ -49,7 +50,9 @@ label scene4_show_romance:
 
 label scene4_hunt_invite:
     redRidingHood "Hey sweetie."
+    show redRidingHood seductive
     redRidingHood "Do you wanna go hunting with me?"
 
 label scene4_why_leave:
+    show redRidingHood neutral
     redRidingHood "Why did you leave so suddenly back there?"

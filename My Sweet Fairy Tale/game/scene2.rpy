@@ -46,8 +46,8 @@ label scene2_own_world:
 
 label scene2_to_town:
     player "S-sorry I have to go..."
+    show redRidingHood neutral
     menu:
-        show redRidingHood neutral
         redRidingHood "Where are you going?"
         "Tell her":
             player "I was going to the town."

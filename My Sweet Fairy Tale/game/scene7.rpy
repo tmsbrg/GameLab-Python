@@ -25,7 +25,7 @@
 #image snowWhite shy = "img/snowwhite_shy.png"
 
 label scene7:
-    scene bg
+    scene bg bedroom
     "The player went to the castle after a long long day and prepared to sleep"
     if romance_snowWhite > romance_redRidingHood && romance_snowWhite > romance_shrek:
         jump scene7_snowWhite

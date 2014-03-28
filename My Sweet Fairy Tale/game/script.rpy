@@ -7,6 +7,7 @@ image bg pink = "img/bg_pink.png"
 image bg forest = "img/bg_forest.png"
 image bg swamp = "img/bg_swamp.png"
 image bg city = "img/bg_city.png"
+image bg bedroom = "img/bedroom.jpg"
 
 # The game starts here.
 label start:

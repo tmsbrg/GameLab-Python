@@ -42,10 +42,10 @@ label scene4_give_flowers:
 
 label scene4_dont_give_flowers:
     if (redRidingHoodIsExpectingFlowers):
+        redRidingHood "You didn't bring me flowers..."
         play sound "snd/minus.mp3"
         "romance -20"
         $ romance_redRidingHood -= 10
-        redRidingHood "You didn't bring me flowers..."
     jump scene4_show_romance
 
 label scene4_show_romance:

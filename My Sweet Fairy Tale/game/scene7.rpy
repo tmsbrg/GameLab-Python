@@ -27,11 +27,11 @@
 label scene7:
     scene bg bedroom
     "The player went to the castle after a long long day and prepared to sleep"
-    if romance_snowWhite > romance_redRidingHood and romance_snowWhite > romance_shrek:
+    if romance_snowWhite > romance_redRidingHood and romance_snowWhite > romance_shrek and romance_snowWhite >= 10:
         jump scene7_snowWhite
-    if romance_shrek > romance_redRidingHood and romance_shrek > romance_snowWhite:   
+    if romance_shrek > romance_redRidingHood and romance_shrek > romance_snowWhite and romance_shrek >= 10:   
         jump scene7_shrek
-    if romance_redRidingHood > romance_shrek and romance_redRidingHood > romance_snowWhite:   
+    if romance_redRidingHood > romance_shrek and romance_redRidingHood > romance_snowWhite and romance_redRidingHood >= 20:   
         jump scene7_redRidingHood   
         
     jump scene7_alone

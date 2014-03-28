@@ -75,7 +75,7 @@ label scene3_comfort:
                             $ romance_snowWhite += 10
                             player "Thanks!"
                             menu:
-                                snowWhite "Do you want to perhaps have a lunch thogeter ?"
+                                snowWhite "Do you want to perhaps have a lunch togheter ?"
                                 "Sure that sounds good! :)":
                                     jump scene3_restaurant
                                 "Sorry I can't I got to do something else":
@@ -101,7 +101,7 @@ label scene3_comfort:
     
     
 label scene3_restaurant:
-    "%(player_name)s and Snow White went to a restaurant thogeter ..."
+    "%(player_name)s and Snow White went to a restaurant togheter ..."
     menu:
         unknown "So what do you both want to order?"
         "Order for both you and Snow White":
@@ -138,8 +138,8 @@ label scene3_restaurant:
                     player "..."
                     jump scene3_flowers
             
-        "Order somethig for yourself and let Snow White order aswell":
-            player "I would like to have a medium rare steak with tommato ketchup"
+        "Order something for yourself and let Snow White order aswell":
+            player "I would like to have a medium rare steak with tomato ketchup"
             unknown "Okay 1 medium rare steak with tommato ketchup and what do you want my lady?"
             snowWhite "I would love to have a raw snail with extra salt and sugar"
             unknown "So that is 1 medium rare steak with tommato ketchup and 1 raw snail with extra salt and sugar?"
@@ -152,7 +152,7 @@ label scene3_restaurant:
             "romance +5"
             $ romance_snowWhite += 5
             "After a nice lunch with Snow White"
-            snowWhite "Thank you for this fantastic lunch and cheering me up I had a great time thogeter with you :$"
+            snowWhite "Thank you for this fantastic lunch and cheering me up I had a great time togheter with you :$"
             player "No, thank you I had a great time as well :)"
             menu:
                 snowWhite "I have to go now will I see you again?"
@@ -228,7 +228,7 @@ label scene3_adorn:
             play sound "snd/plus.mp3"
             "romance +5"
             $ romance_snowWhite += 5
-            player "Thank you :) we should have lunch thogeter"
+            player "Thank you :) we should have lunch togheter"
             snowWhite "That sounds like a good idea! I know a great place, I'm Snow White by the way and you are?"
             player "I'm %(player_name)s lets go! :)"
             jump scene3_restaurant

@@ -11,12 +11,14 @@ label scene2:
     scene bg forest
     unknown "Hey there ;-)"
     player "Who said that?"
-    show redRidingHood neutral at right
+    show redRidingHood happy at right
     with fade
     redRidingHood "Hello, hottie."
     player "H-hi?"
+    show redRidingHood neutral
     redRidingHood "I'm red riding hood, what's your name? ;-)"
     player "My name is %(player_name)s."
+    show redRidingHood happy
     redRidingHood "%(player_name)s? What a funny name for such a cutie."
     player "Eh..."
     menu:
@@ -31,8 +33,10 @@ label scene2:
 
 label scene2_own_world:
     "You tell her your odd tale and that you want to get back to your own world..."
+    show redRidingHood happy
     redRidingHood "Aww that's too bad ;-)"
     player "Do you know a way to get back?"
+    show redRidingHood neutral
     redRidingHood "I never heard such a strange story."
     redRidingHood "Maybe someone in town can help you."
     player "Actually, I was on the way there now."
@@ -43,12 +47,14 @@ label scene2_own_world:
 label scene2_to_town:
     player "S-sorry I have to go..."
     menu:
+        show redRidingHood neutral
         redRidingHood "Where are you going?"
         "Tell her":
             player "I was going to the town."
             redRidingHood "Oh. Have fun."
             jump scene2_bring_flowers
         "Just leave":
+            show redRidingHood angry
             play sound "snd/minus.mp3"
             "romance -20"
             $ romance_redRidingHood -= 20
@@ -56,6 +62,7 @@ label scene2_to_town:
 
 label scene2_grill:
     player "I-I'm a girl you know"
+    show redRidingHood seductive
     redRidingHood "Yes, and such a cute one ;-)"
     play sound "snd/plus.mp3"
     "romance +10"
@@ -68,6 +75,7 @@ label scene2_grill:
             jump scene2_to_town
 
 label scene2_bring_flowers:
+    show redRidingHood happy
     redRidingHood "Hey, bring me some flowers while you're there."
     player "S-sure"
     $ redRidingHoodIsExpectingFlowers = True

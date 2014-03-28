@@ -45,12 +45,8 @@ label scene3_comfort:
             "romance +5"
             $ romance_snowWhite += 5
             player "So what happend? Why did he broke up?"
-<<<<<<< HEAD
             show snowWhite angry
-=======
-            show snowWhite sad
             with fade
->>>>>>> fd0507b01713e97db9cdd91f3e66945f03a6f1d1
             menu:
                 snowWhite "He wanted a real princess and choosed a filthy female Ogre above me :'("
                 "Ohh please grow up how old are you?! 5 ?":
@@ -88,12 +84,8 @@ label scene3_comfort:
                                     jump scene3_flowers
                                     
                         "No, you are ugly!":
-<<<<<<< HEAD
                             show snowWhite angry
-=======
-                            show snowWhite sad
                             with fade
->>>>>>> fd0507b01713e97db9cdd91f3e66945f03a6f1d1
                             snowWhite "You are mean :'( Go away! Leave me alone!"
                             play sound "snd/plus.mp3"
                             "romance -10"
@@ -137,12 +129,8 @@ label scene3_restaurant:
                     player "Bye bye"
                     jump scene3_flowers
                 "Ohh well I didn't enjoy it either. It was a waste of time really...":
-<<<<<<< HEAD
                     show snowWhite angry
-=======
-                    show snowWhite sad
                     with fade
->>>>>>> fd0507b01713e97db9cdd91f3e66945f03a6f1d1
                     snowWhite "Ohh... I'm sorry to waste you time :'( Well I have to go bye!"
                     play sound "snd/minus.mp3"
                     "romance -5"

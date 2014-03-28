@@ -11,6 +11,9 @@ define femaleWolf = Character('Female Wolf', color="#B38946")
 
 define redRidingHood = Character('Red Riding Hood', color="#F5451D")
 image redRidingHood neutral = "img/redridinghood_neutral.png"
+image redRidingHood angry = "img/redridinghood_angry.png"
+image redRidingHood happy = "img/redRidingHood_happy.png"
+image redRidingHood seductive = "img/redRidingHood_seductive.png"
 
 define cinderella = Character('Cinderella', color="#5CF2FA")
 

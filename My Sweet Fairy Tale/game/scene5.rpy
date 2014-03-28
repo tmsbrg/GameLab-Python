@@ -24,7 +24,7 @@
 
 
 label scene5:
-    show swamp_background
+    scene bg swamp
     if romance_shrek < 0:
         show shrek mad
         with fade

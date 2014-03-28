@@ -17,14 +17,10 @@
 #uiteindelijk kun je kiezen of je naar het moeras gaat of naar het bos van Red
 #Riding Hood
 
-image city_background = "img/citybackground.jpg"
-image snowWhite smile = "img/snowwhite_smile.jpg"
-image snowWhite angry = "img/snowwhite_angry.jpg"
-image snowWhite sad = "img/snowwhite_sad.jpg"
-
 label scene3:
-    show city_background
-    show snowWhite sad
+    $ bought_flowers = False
+    scene bg city
+    show snowWhite angry
     unknown "*sniff* *sniff* How could he :'( *sniff* *sniff*"
     menu: 
         "???? is crying what will you do?"
@@ -35,7 +31,7 @@ label scene3:
         "Try to adorn her":
             jump scene3_adorn
 label scene3_comfort:
-    player "Hi, I'm %(player_name)s what is wrong? Why are you so upsad?"
+    player "Hi, I'm %(player_name)s what is wrong? Why are you so upset?"
     menu: 
         unknown "Prince Charming he... he... broke up with me :'("
         "Hug ????":
@@ -47,7 +43,7 @@ label scene3_comfort:
             "romance +5"
             $ romance_snowWhite += 5
             player "So what happend? Why did he broke up?"
-            show snowWhite sad
+            show snowWhite angry
             menu:
                 snowWhite "He wanted a real princess and choosed a filthy female Ogre above me :'("
                 "Ohh please grow up how old are you?! 5 ?":
@@ -83,7 +79,7 @@ label scene3_comfort:
                                     jump scene3_flowers
                                     
                         "No, you are ugly!":
-                            show snowWhite sad
+                            show snowWhite angry
                             snowWhite "You are mean :'( Go away! Leave me alone!"
                             play sound "snd/minus.mp3"
                             "romance -10"
@@ -125,7 +121,7 @@ label scene3_restaurant:
                     player "Bye bye"
                     jump scene3_flowers
                 "Ohh well I didn't enjoy it either. It was a waste of time really...":
-                    show snowWhite sad
+                    show snowWhite angry
                     snowWhite "Ohh... I'm sorry to waste you time :'( Well I have to go bye!"
                     play sound "snd/minus.mp3"
                     "romance -5"
@@ -160,7 +156,7 @@ label scene3_restaurant:
                     player "Bye bye :)"
                     jump scene3_flowers
                 "No you are boring":
-                    show snowWhite sad
+                    show snowWhite angry
                     snowWhite "... Well that isn't nice :'( Bye!"
                     player "..."
                     play sound "snd/minus.mp3"
@@ -179,6 +175,7 @@ label scene3_flowers:
     player  "Here you go :)"
     unknown  "Thanks, here you have your bouquet. Goodluck with your goal"
     player "Thanks. Bye bye!"
+    $ bought_flowers = True
     jump scene4
 
 label scene3_ignore:

@@ -15,13 +15,10 @@
 #	Je motivatie is eerst om terug te komen naar de gewone wereld,
 #	maar nadat je de hete chicks van de fairy tale wereld vind, verandert je
 #	motivatie
-image swamp_background = "img/swampbackground.jpg"
-image shrek smile = "img/shrek_smile.jpg"
-image shrek mad = "img/shrek_mad.jpg"
 
 label scene1:
-    show swamp_background
-    show shrek mad
+    scene bg swamp
+    show shrek confused
     unknown "Hey YOU! What are you doing in my swamp? And who are you?"
     player " I'm %(player_name)s and I don't know, last thing I remember is that I was in my bed sleeping and now I'm here. Where am I and who are you?"
     jump scene1_choose
@@ -60,6 +57,7 @@ label scene1_good:
     jump scene2
     
 label scene1_bad:
+    show shrek mad
     shrek "Fine!, ROARRRRR! GET OUT MY SWAMP NOW BEFORE I EAT YOU!"
     play sound "snd/minus.mp3"
     "romance -5"

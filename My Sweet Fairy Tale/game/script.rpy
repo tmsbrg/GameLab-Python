@@ -3,7 +3,10 @@
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 
+image bg pink = "img/bg_pink.png"
 image bg forest = "img/bg_forest.png"
+image bg swamp = "img/bg_swamp.png"
+image bg city = "img/bg_city.png"
 
 # The game starts here.
 label start:
@@ -12,6 +15,7 @@ label start:
     $ romance_shrek = 0
 
     play music "bgm/bg.ogg"
+    show bg pink
     
     $ player_name = renpy.input("My lady, what is your name?").strip()
     if player_name == "":

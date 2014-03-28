@@ -10,7 +10,6 @@
 # Je eindigt in de stad en Red Riding Hood moet dan weer weg
 
 label scene4:
-    $ bought_flowers = True # this should be in scene3
     scene bg forest
     "You go back to the forest"
 

@@ -13,7 +13,7 @@ image bg bedroom = "img/bedroom.jpg"
 # The game starts here.
 label start:
     $ romance_snowWhite = 0
-    $ romance_redRidingHood = 0
+    $ romance_redRidingHood = 50
     $ romance_shrek = 0
 
     play music "bgm/bg.ogg"

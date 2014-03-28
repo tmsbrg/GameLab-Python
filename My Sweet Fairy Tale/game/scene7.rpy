@@ -27,16 +27,19 @@
 label scene7:
     scene bg bedroom
     "The player went to the castle after a long long day and prepared to sleep"
-    if romance_snowWhite > romance_redRidingHood && romance_snowWhite > romance_shrek:
+    if romance_snowWhite > romance_redRidingHood and romance_snowWhite > romance_shrek:
         jump scene7_snowWhite
-    if romance_shrek > romance_redRidingHood && romance_shrek > romance_snowWhite:   
+    if romance_shrek > romance_redRidingHood and romance_shrek > romance_snowWhite:   
         jump scene7_shrek
-    if romance_redRidingHood > romance_shrek && romance_redRidingHood > romance_snowWhite:   
+    if romance_redRidingHood > romance_shrek and romance_redRidingHood > romance_snowWhite:   
         jump scene7_redRidingHood   
         
     jump scene7_alone
  
 label scene7_redRidingHood:
+    show redRidingHood seductive
+    "You live happily ever after with red riding hood"
+    jump scene7_end
     
     
 label scene7_shrek:

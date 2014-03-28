@@ -64,7 +64,7 @@ label scene3_comfort:
                     $ romance_snowWhite -= 10
                     jump scene3_ignore
                 "What a asshole! How can he choose a Ogre above you? You look pretty :)":
-                    show snowWhite smile
+                    show snowWhite shy
                     with fade
                     menu:
                         snowWhite "Really? Do you really think I'm pretty ? :$"
@@ -156,6 +156,8 @@ label scene3_restaurant:
             player "No, thank you I had a great time as well :)"
             menu:
                 snowWhite "I have to go now will I see you again?"
+                #show snowWhite shy
+                #with fade
                 "Ofcourse you will!":
                     play sound "snd/plus.mp3"
                     "romance +5"
@@ -220,7 +222,8 @@ label scene3_adorn:
             jump scene3_flowers
         "No":
             player "I'm sorry I thought that you looked pretty. A pretty girl shouldn't cry"
-            show snowWhite smile
+            show snowWhite shy
+            with fade
             unknown "That is nice of you, you don't look bad either"
             play sound "snd/plus.mp3"
             "romance +5"
